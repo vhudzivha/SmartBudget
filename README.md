@@ -42,7 +42,7 @@ https://youtu.be/oNykYZwPakA
 
 
  APK
-https://github.com/vhudzivha/SmartBudget/blob/master/smart%20budget-app.apk
+https://github.com/vhudzivha/SmartBudget/raw/master/smart%20budget-app.apk
 
 
 
