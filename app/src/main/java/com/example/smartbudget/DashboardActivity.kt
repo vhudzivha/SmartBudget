@@ -79,6 +79,6 @@ class DashboardActivity : AppCompatActivity() {
         Log.d("SmartBudget", "Total calculated: $total")
 
         recycler.layoutManager = LinearLayoutManager(this)
-        recycler.adapter = ExpenseAdapter(expenseList)
+        recycler.adapter = ExpenseAdapter(this, expenseList)
     }
 }
