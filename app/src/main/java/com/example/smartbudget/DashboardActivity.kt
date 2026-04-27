@@ -2,44 +2,38 @@ package com.example.smartbudget
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-// This activity displays all expenses and total
 class DashboardActivity : AppCompatActivity() {
+
+    private lateinit var recycler: RecyclerView
+    private lateinit var totalText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_dashboard)
 
         val addBtn = findViewById<Button>(R.id.addBtn)
+        recycler = findViewById(R.id.expenseList)
+        totalText = findViewById(R.id.totalText)
 
-        // Navigate to Add Expense screen
         addBtn.setOnClickListener {
             startActivity(Intent(this, AddExpenseActivity::class.java))
         }
 
-        Log.d("SmartBudget", "Dashboard opened")
-
-        loadExpenses()
+        recycler.layoutManager = LinearLayoutManager(this)
     }
 
-    // Auto refresh when returning to dashboard
     override fun onResume() {
         super.onResume()
         loadExpenses()
     }
 
-    // Load and display stored expenses
     private fun loadExpenses() {
-
-        val recycler = findViewById<RecyclerView>(R.id.expenseList)
-        val totalText = findViewById<TextView>(R.id.totalText)
 
         val sharedPref = getSharedPreferences("SmartBudget", MODE_PRIVATE)
         val data = sharedPref.getString("expenses", "") ?: ""
@@ -52,33 +46,26 @@ class DashboardActivity : AppCompatActivity() {
 
             for (record in records) {
                 if (record.isNotEmpty()) {
-
                     val parts = record.split(",")
 
-                    val amount = parts[0]
-                    val category = parts[1]
-                    val description = parts[2]
+                    if (parts.size >= 3) {
+                        val amount = parts[0]
+                        val category = parts[1]
+                        val description = parts[2]
 
-                    expenseList.add(Expense(amount, category, description))
-
-                    // Safe conversion (prevents crashes)
-                    total += amount.toDoubleOrNull() ?: 0.0
-
-                    Log.d("SmartBudget", "Loaded: $amount - $category")
+                        expenseList.add(Expense(amount, category, description))
+                        total += amount.toDoubleOrNull() ?: 0.0
+                    }
                 }
             }
         }
 
-        // Empty state
         if (expenseList.isEmpty()) {
-            totalText.text = getString(R.string.no_expenses)
+            totalText.text = "No expenses yet"
         } else {
-            totalText.text = getString(R.string.total_format, total)
+            totalText.text = "Total: R$total"
         }
 
-        Log.d("SmartBudget", "Total calculated: $total")
-
-        recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = ExpenseAdapter(this, expenseList)
     }
 }
