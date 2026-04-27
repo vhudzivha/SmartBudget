@@ -38,7 +38,7 @@ the App Works
 6. Total spending is calculated automatically  
 
 Video Demonstration
-(Add your YouTube link here)
+https://youtu.be/oNykYZwPakA
 
 
 ## 📦 APK
