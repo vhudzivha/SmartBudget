@@ -6,31 +6,32 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dashboard"
-        android:textSize="22sp"
-        android:textStyle="bold"/>
+        android:text="@string/dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/totalText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total: R0"
-        android:layout_marginTop="10dp"
-        android:textSize="18sp"/>
+        android:text="@string/total_text"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
     <Button
-        android:id="@+id/addExpenseBtn"
+        android:id="@+id/addBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Expense"
-        android:layout_marginTop="10dp"/>
+        android:text="@string/add_expense"
+        android:layout_marginTop="12dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/expenseList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>

@@ -8,32 +8,36 @@
     android:background="@android:color/white"
     android:elevation="4dp">
 
+    <!-- Amount -->
     <TextView
         android:id="@+id/itemAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Amount"
-        android:textStyle="bold"
-        android:textSize="16sp"/>
+        android:text="@string/label_amount"
+        android:textStyle="bold" />
 
+    <!-- Category -->
     <TextView
         android:id="@+id/itemCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Category"
-        android:layout_marginTop="4dp"/>
+        android:text="@string/label_category"
+        android:layout_marginTop="4dp" />
 
+    <!-- Description -->
     <TextView
         android:id="@+id/itemDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description"
-        android:layout_marginTop="2dp"/>
+        android:text="@string/label_description"
+        android:layout_marginTop="4dp" />
 
+    <!-- Delete Button -->
     <Button
         android:id="@+id/deleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete"
-        android:layout_marginTop="8dp"/>
+        android:text="@string/delete"
+        android:layout_marginTop="8dp" />
+
 </LinearLayout>

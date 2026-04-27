@@ -3,34 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="16dp">
 
+    <!-- Amount -->
     <EditText
         android:id="@+id/amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Amount"
-        android:inputType="numberDecimal"/>
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"
+        android:autofillHints="creditCardNumber" />
 
+    <!-- Category -->
     <EditText
         android:id="@+id/category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Category"
-        android:layout_marginTop="10dp"/>
+        android:hint="@string/enter_category"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:autofillHints="name" />
 
+    <!-- Description -->
     <EditText
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description"
-        android:layout_marginTop="10dp"/>
+        android:hint="@string/enter_description"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:autofillHints="text" />
 
+    <!-- Save Button -->
     <Button
         android:id="@+id/saveBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save Expense"
-        android:layout_marginTop="20dp"/>
+        android:text="@string/save_expense"
+        android:layout_marginTop="15dp" />
 
 </LinearLayout>

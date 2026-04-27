@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">SmartBudget</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard">Dashboard</string>
+    <string name="total_text">Total: R0</string>
+    <string name="add_expense">Add Expense</string>
+
+    <!-- Add Expense -->
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_category">Enter Category</string>
+    <string name="enter_description">Description</string>
+    <string name="save_expense">Save Expense</string>
+
+    <!-- Adapter -->
+    <string name="amount_format">R%1$s</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <string name="label_amount">Amount</string>
+    <string name="label_category">Category</string>
+    <string name="label_description">Description</string>
+    <string name="delete">Delete</string>
+    <string name="total_format">Total: R%1$.2f</string>
+    <string name="no_expenses">No expenses yet</string>
 </resources>
