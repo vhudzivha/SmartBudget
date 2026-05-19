@@ -1,51 +1,121 @@
-SmartBudget App
+ SmartBudget App 
 
-Student Information
-Name: Madoba Sunnyboy  
-Student Number: ST10375267  
 
- Description
-SmartBudget is an Android application developed using Kotlin.  
-It is designed to help users manage and track their daily expenses efficiently by allowing them to enter, store, and view spending data in a simple and user-friendly interface.
+- Name: Madoba Sunnyboy
+- Student Number: ST10375267
+- Module: Open Source Coding
+- Lecturer: Mr Manzini
+
+
 
 Project Overview
-The SmartBudget app enables users to log in, add expenses, store data locally, and view a summary of their spending.  
-It demonstrates key Android development concepts such as data persistence, user input validation, and dynamic UI updates.
+
+SmartBudget is a modern Android budgeting application designed to help users manage their daily expenses, track spending habits, and improve financial awareness.
+
+The application allows users to add, edit, delete, and analyse expenses using an interactive dashboard with graphical analytics, budgeting tools, achievement rewards, and receipt uploads.
+
+The app was developed using Kotlin in Android Studio.
 
 
-Features
-- Login screen  
-- Add expense (amount, category, description)  
-- Store data using SharedPreferences  
-- Display expenses using RecyclerView  
-- Delete expenses  
-- Automatic total calculation  
-- Clean and user-friendly interface  
+
+ Main Features
+
+Expense Management
+- Add expenses
+- Edit expenses
+- Delete expenses
+- View all expenses
+
+Expense Categories
+Users can organise expenses into categories such as:
+- Food
+- Transport
+- Entertainment
+- Savings
+- Petrol
+- School
+- Other
+
+ Budget Tracking
+- Budget goal tracking
+- Remaining balance calculation
+- Budget progress bar
+- Overspending warnings
+
+ Analytics Dashboard
+- Pie chart analytics
+- Spending by category
+- Minimum goal display
+- Maximum goal display
+- Spending status evaluation
+
+Receipt Upload
+Users can upload and preview receipt images before saving expenses.
+
+ Period Filtering
+Expenses can be filtered by:
+- All Expenses
+- Today
+- This Month
+
+ Achievement & Reward System
+The app includes gamification features such as:
+- Budget Beginner
+- Smart Saver
+- Budget Master
+- Overspending Alert
+
+---
+
+Custom Features Implemented
+
+The following custom features were added beyond the basic application requirements:
+
+1. Receipt Upload Feature
+2. Achievement & Reward System
+3. Expense Period Filtering
+
+---
 
  Technologies Used
-- Kotlin  
-- Android Studio  
-- XML (UI Design)  
-- RecyclerView  
-- SharedPreferences  
 
-the App Works
-1. User logs in  
-2. Dashboard is displayed  
-3. User adds expenses  
-4. Data is saved locally using SharedPreferences  
-5. Expenses are displayed in a RecyclerView list  
-6. Total spending is calculated automatically  
+- Kotlin
+- Android Studio
+- RecyclerView
+- SharedPreferences
+- MPAndroidChart
+- Material Design Components
 
-Video Demonstration
-https://youtu.be/oNykYZwPakA
+---
+
+Application Screens
+
+The application contains:
+- Login Screen
+- Dashboard Screen
+- Add Expense Screen
+- Analytics Screen
+- Edit Expense Screen
+
+---
+
+ How to Run the App
+
+1. Open the project in Android Studio
+2. Allow Gradle to sync
+3. Connect an Android emulator or device
+4. Click Run 
+5. Launch SmartBudget
 
 
- APK
-https://github.com/vhudzivha/SmartBudget/raw/master/smart%20budget-app.apk
+
+# 📷 Screenshots
+
+(Add screenshots here before submission)
 
 
+ Conclusion
 
-Conclusion
-The SmartBudget application successfully demonstrates a functional budgeting system with local data storage, input validation, and dynamic interface updates.  
-It reflects a solid understanding of Android development principles and provides a practical solution for managing daily expenses.
+SmartBudget provides users with a modern and interactive budgeting experience through smart analytics, financial tracking, visual reporting, and gamification features.
+
+The application demonstrates practical Android development concepts including CRUD operations, data persistence, graphical analytics, filtering systems, and responsive UI design.
