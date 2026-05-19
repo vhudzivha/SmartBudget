@@ -38,11 +38,11 @@ the App Works
 6. Total spending is calculated automatically  
 
 Video Demonstration
-(Add your YouTube link here)
+https://youtu.be/oNykYZwPakA
 
 
-## 📦 APK
-(Add your APK link here if required)
+ APK
+https://github.com/vhudzivha/SmartBudget/raw/master/smart%20budget-app.apk
 
 
 
