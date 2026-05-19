@@ -13,14 +13,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Expense"
+            android:text="Edit Expense"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="@color/text_dark"
             android:layout_marginBottom="24dp"/>
 
         <EditText
-            android:id="@+id/amount"
+            android:id="@+id/editAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Amount"
@@ -29,41 +29,29 @@
             android:background="@android:drawable/edit_text"
             android:layout_marginBottom="16dp"/>
 
-        <Spinner
-            android:id="@+id/categorySpinner"
+        <EditText
+            android:id="@+id/editCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Enter Category"
+            android:padding="14dp"
+            android:background="@android:drawable/edit_text"
             android:layout_marginBottom="16dp"/>
 
         <EditText
-            android:id="@+id/description"
+            android:id="@+id/editDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Description"
             android:padding="14dp"
             android:background="@android:drawable/edit_text"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="24dp"/>
 
         <Button
-            android:id="@+id/uploadBtn"
+            android:id="@+id/updateBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upload Receipt"
-            android:layout_marginBottom="16dp"/>
-
-        <ImageView
-            android:id="@+id/receiptImage"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:background="#DDDDDD"
-            android:layout_marginBottom="20dp"/>
-
-        <Button
-            android:id="@+id/saveBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save Expense"/>
+            android:text="Update Expense"/>
 
     </LinearLayout>
 
