@@ -65,7 +65,7 @@ The app includes gamification features such as:
 - Budget Master
 - Overspending Alert
 
----
+
 
 Custom Features Implemented
 
@@ -75,7 +75,7 @@ The following custom features were added beyond the basic application requiremen
 2. Achievement & Reward System
 3. Expense Period Filtering
 
----
+
 
  Technologies Used
 
@@ -86,7 +86,6 @@ The following custom features were added beyond the basic application requiremen
 - MPAndroidChart
 - Material Design Components
 
----
 
 Application Screens
 
@@ -100,6 +99,9 @@ The application contains:
 downloawd apk
 https://drive.google.com/file/d/1pm8GimVPPDeI5cdm1kNnAcqrs89SmG-9/view?usp=sharing
 
+YouTube Demo/video : 
+https://youtu.be/hcMwexAhuDM 
+
  How to Run the App
 
 1. Open the project in Android Studio
@@ -108,11 +110,6 @@ https://drive.google.com/file/d/1pm8GimVPPDeI5cdm1kNnAcqrs89SmG-9/view?usp=shari
 4. Click Run 
 5. Launch SmartBudget
 
-
-
-# 📷 Screenshots
-
-(Add screenshots here before submission)
 
 
  Conclusion
